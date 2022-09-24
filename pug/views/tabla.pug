@@ -1,0 +1,22 @@
+html
+  body
+    div
+      if arrayProductos
+         table
+
+            tr
+               th Nombre
+               th Precio
+               th Imagen
+            | 
+            
+            tr
+            each product in arrayProductos
+               td #{product.nombre } 
+               td #{product.precio } 
+               td
+                  img(src=product.url, alt=product.nombre)
+
+      else if !arrayProductos
+         p  NO SE ENCUENTRA NINGUN PRODUCTO
+

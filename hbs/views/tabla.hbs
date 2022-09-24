@@ -1,0 +1,25 @@
+<div>
+    
+<table>
+    {{#if arrayProductos}}
+        <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Imagen</th>
+    </tr>
+        {{#each arrayProductos}}
+            <tr>
+                <td>{{this.nombre }} </td>
+                <td>{{this.precio }} </td>
+                <td> <img src={{this.url }} alt={{this.nombre }}> </td>
+            </tr>
+        {{/each}}
+        
+    {{else }}
+           <h2>No hay productos</h2>
+    {{/if}}
+
+</table>
+
+
+</div>

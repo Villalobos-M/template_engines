@@ -1,0 +1,13 @@
+html
+  body
+    div
+      form(action="/productos", method="post")
+        | Nombre:
+        input#nombre(type="text", name="nombre")
+        | 
+        | Precio:
+        input#precio(type="text", name="precio")
+        | url:
+        input#url(type="text", name="url")
+        input(type="submit", value="INGRESAR")
+
